@@ -24,7 +24,8 @@ class webserverHandler (BaseHTTPRequestHandler):
 				for rest in rests:
 					output += rest.name
 					output += "</br>"
-					output += "<a href ='#'>Edit</a></br>"
+					output += "<a href ='/restaurants/%s/edit'>Edit</a>" %rest.id
+					output += "</br>"
 					output += "<a href ='#'>Delete</a></br>"
 					output += "</br></br>"
 
